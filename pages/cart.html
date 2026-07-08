@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon · Your Curated Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link for Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../images/whitelogo.svg" />
+  </head>
+  <body>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="blog.html">Discover</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-overlay"></div>
+
+    <header>
+      <div
+        class="header-content d-flex justify-content-between align-items-center"
+      >
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/mainlogo.svg" alt="Moon Logo" />
+          </a>
+        </div>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons d-flex align-items-center">
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Search.svg" alt="Search"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Avatar.svg" alt="User"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Heart.svg" alt="Wishlist"
+          /></a>
+          <a href="cart.html" class="cart-icon"
+            ><img src="../images/Shopping cart.svg" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="cart-head d-flex align-items-center gap-2 mb-4">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="./shop.html">Shopping Cart</a>
+      </section>
+      <!-- the cart-container section -->
+      <section class="cart-container">
+        <h2 class="mb-4">Cart (<span id="itemcounter">3</span> item)</h2>
+
+        <div class="cart-item">
+          <div
+            class="cart-info d-flex align-items-center text-uppercase row g-0 text-center"
+          >
+            <div class="col-1 text-start">
+              <button class="bin-button">
+                <svg
+                  class="bin-top"
+                  viewBox="0 0 39 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    y1="5"
+                    x2="39"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="4"
+                  ></line>
+                  <line
+                    x1="12"
+                    y1="1.5"
+                    x2="26.0357"
+                    y2="1.5"
+                    stroke="white"
+                    stroke-width="3"
+                  ></line>
+                </svg>
+                <svg
+                  class="bin-bottom"
+                  viewBox="0 0 33 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1_8_19" fill="white">
+                    <path
+                      d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z"
+                    ></path>
+                  </mask>
+                  <path
+                    d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z"
+                    fill="white"
+                    mask="url(#path-1-inside-1_8_19)"
+                  ></path>
+                  <path d="M12 6L12 29" stroke="white" stroke-width="4"></path>
+                  <path d="M21 6V29" stroke="white" stroke-width="4"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="col-2"><h6>Photo</h6></div>
+            <div class="col-4 text-start ps-4"><h6>Product</h6></div>
+            <div class="col-1"><h6>Price</h6></div>
+            <div class="col-2"><h6>Quantity</h6></div>
+            <div class="col-2"><h6>Subtotal</h6></div>
+          </div>
+        </div>
+
+        <div class="cart-items-list shadow-sm">
+          <div class="cart-item-row row align-items-center text-center g-0">
+            <div class="col-1 text-start item-remove">
+              <button class="btn border-0 p-0">✕</button>
+            </div>
+            <div class="col-2 item-img">
+              <img
+                src="../images/Discover-img-1.jpg"
+                alt="Porcelain Dinner Plate"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 text-start ps-4 item-title">
+              <h6>PORCELAIN DINNER PLATE (27CM)</h6>
+            </div>
+            <div class="col-1 item-price">
+              <span>$59</span>
+            </div>
+            <div class="col-2 item-quantity">
+              <div
+                class="quantity-counter d-flex align-items-center justify-content-between mx-auto"
+              >
+                <button class="qty-btn">—</button>
+                <span class="qty-val">2</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+            <div class="col-2 item-subtotal">
+              <span>$98</span>
+            </div>
+          </div>
+
+          <div class="cart-item-row row align-items-center text-center g-0">
+            <div class="col-1 text-start item-remove">
+              <button class="btn border-0 p-0">✕</button>
+            </div>
+            <div class="col-2 item-img">
+              <img
+                src="../images/Discover-img-2.jpg"
+                alt="Ophelia Matte Natural Vase"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 text-start ps-4 item-title">
+              <h6>OPHELIA MATTE NATURAL VASE</h6>
+            </div>
+            <div class="col-1 item-price">
+              <span>$168</span>
+            </div>
+            <div class="col-2 item-quantity">
+              <div
+                class="quantity-counter d-flex align-items-center justify-content-between mx-auto"
+              >
+                <button class="qty-btn">—</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+            <div class="col-2 item-subtotal">
+              <span>$68</span>
+            </div>
+          </div>
+
+          <div class="cart-item-row row align-items-center text-center g-0">
+            <div class="col-1 text-start item-remove">
+              <button class="btn border-0 p-0">✕</button>
+            </div>
+            <div class="col-2 item-img">
+              <img
+                src="..//images/Discover-img-3.jpg"
+                alt="Porcelain Dinner Plate"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 text-start ps-4 item-title">
+              <h6>PORCELAIN DINNER PLATE</h6>
+            </div>
+            <div class="col-1 item-price">
+              <span>$70</span>
+            </div>
+            <div class="col-2 item-quantity">
+              <div
+                class="quantity-counter d-flex align-items-center justify-content-between mx-auto"
+              >
+                <button class="qty-btn">—</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+            <div class="col-2 item-subtotal">
+              <span>$70</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-2 g-4">
+          <div class="col-md-7">
+            <div class="coupon-box d-flex gap-2">
+              <input
+                type="text"
+                placeholder="Coupon code"
+                class="form-control rounded-0"
+              />
+              <button class="btn btn-apply text-uppercase">Apply Coupon</button>
+            </div>
+          </div>
+
+          <div class="col-md-5 d-flex flex-column align-items-end">
+            <button class="btn btn-update text-uppercase mb-4">
+              Update Cart
+            </button>
+
+            <div class="cart-totals-card w-100 p-4">
+              <h5 class="mb-4">Cart totals</h5>
+
+              <div
+                class="d-flex justify-content-between border-bottom pb-2 mb-3 text-muted fs-6"
+              >
+                <span class="text-white">Subtotal</span>
+                <span class="text-white">$465.00</span>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <span class="text-white">Cart totals</span>
+                <span class="text-white fs-5 fw-bold">$500.00</span>
+              </div>
+
+              <a
+                href="../pages/checkout.html"
+                class="btn btn-checkout text-uppercase w-100 py-2.5 rounded-0"
+              >
+                Proceed to Checkout
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer Section -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Left Side -->
+        <div class="footer-brand">
+          <img src="../images/footer-img.svg" alt="Moon Logo" />
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
+            mauris sed ma
+          </p>
+
+          <a href="#" class="footer-btn">
+            GET STARTED <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>ABOUT US</h4>
+
+            <a href="#">Mission</a>
+            <a href="#">Our team</a>
+            <a href="#">Awards</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Privacy policy</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>SERVICES</h4>
+
+            <a href="#">Web design</a>
+            <a href="#">Web development</a>
+            <a href="#">Mobile design</a>
+            <a href="#">UI/UX design</a>
+            <a href="#">Branding design</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>PORTFOLIO</h4>
+
+            <a href="#">Corporate websites</a>
+            <a href="#">E-commerce</a>
+            <a href="#">Mobile apps</a>
+            <a href="#">Landing pages</a>
+            <a href="#">UI/UX projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright © 2023 Moon | All Rights Reserved |
+          <a href="#">Terms and Conditions</a> |
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+    <script src="../Scripts/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon · The Collections</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/Shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../images/whitelogo.svg" />
+  </head>
+
+  <body>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="./blog.html">Discover</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-overlay"></div>
+
+    <header>
+      <div
+        class="header-content d-flex justify-content-between align-items-center"
+      >
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/mainlogo.svg" alt="Moon Logo" />
+          </a>
+        </div>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./shop.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons d-flex align-items-center">
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Search.svg" alt="Search"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Avatar.svg" alt="User"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Heart.svg" alt="Wishlist"
+          /></a>
+          <a href="./cart.html" class="cart-icon"
+            ><img src="../images/Shopping cart.svg" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="shop-head d-flex">
+        <div class="line"></div>
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="shop.html">Shop</a>
+      </section>
+
+      <div class="shop-content-wrapper">
+        <div class="filter-overlay"></div>
+
+        <aside class="sidebar-section">
+          <div class="filter-header">
+            <h5>Filters</h5>
+            <button
+              id="filterClose"
+              class="filter-close"
+              aria-label="Close filters"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <h5>Showing 120 items</h5>
+          <div class="filter-line"></div>
+
+          <div class="filter-box">
+            <h6>Category</h6>
+            <label><input type="checkbox" /> Dinnerware</label>
+            <label><input type="checkbox" /> Ceramic</label>
+            <label><input type="checkbox" /> Furniture</label>
+            <label><input type="checkbox" /> Decor Art</label>
+            <label><input type="checkbox" /> Gift Sets</label>
+          </div>
+          <div class="filter-line"></div>
+
+          <div class="filter-box">
+            <h6>Price Range</h6>
+            <label><input type="checkbox" /> $0 - $10</label>
+            <label><input type="checkbox" /> $10 - $50</label>
+            <label><input type="checkbox" /> $50 - $100</label>
+            <label><input type="checkbox" /> $100 - $200</label>
+            <label><input type="checkbox" /> $200+</label>
+          </div>
+          <div class="filter-line"></div>
+
+          <div class="filter-box">
+            <h6>Colors</h6>
+            <div class="color-options-group">
+              <label class="color-box">
+                <input type="checkbox" />
+                <span class="color-box-visual color-white"></span>
+              </label>
+              <label class="color-box">
+                <input type="checkbox" />
+                <span class="color-box-visual color-beige"></span>
+              </label>
+              <label class="color-box">
+                <input type="checkbox" />
+                <span class="color-box-visual color-sage"></span>
+              </label>
+              <label class="color-box">
+                <input type="checkbox" />
+                <span class="color-box-visual color-terracotta"></span>
+              </label>
+              <label class="color-box">
+                <input type="checkbox" />
+                <span class="color-box-visual color-slate"></span>
+              </label>
+            </div>
+          </div>
+          <div class="filter-line"></div>
+
+          <div class="filter-box">
+            <h6>Tags</h6>
+            <label><input type="checkbox" /> Dinnerware</label>
+            <label><input type="checkbox" /> Ceramic</label>
+            <label><input type="checkbox" /> Furniture</label>
+            <label><input type="checkbox" /> Decor Art</label>
+            <label><input type="checkbox" /> Gift Sets</label>
+          </div>
+
+          <div class="filter-buttons">
+            <button id="resetFilters" class="btn-reset">Reset</button>
+            <button id="applyFilters" class="btn-apply">Apply Filters</button>
+          </div>
+        </aside>
+
+        <section class="products-container">
+          <div class="mobile-filter-sort-bar">
+            <button id="filterToggle" class="mobile-filter-btn">
+              <svg
+                width="18"
+                height="12"
+                viewBox="0 0 18 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 12H6V10H0V12ZM0 0V2H18V0H0ZM0 7H12V5H0V7Z"
+                  fill="#3A3845"
+                />
+              </svg>
+              <span>FILTER</span>
+            </button>
+
+            <div class="mobile-sort-dropdown">
+              <label for="mobile-sort">Sort by:</label>
+              <select id="mobile-sort">
+                <option>Name</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-header">
+            <div class="sort-by">
+              <label for="sort">Sort by:</label>
+              <select id="sort">
+                <option>Name</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="../images/product9.jpg"
+                  alt="Small Ecru Ceramic Compote"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">SMALL ECRU CERAMIC COMPOTE</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="../images/product3.jpg"
+                  alt="Porcelain Dinner Plate"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">PORCELAIN DINNER PLATE</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse bolli tetur .
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../images/product4.jpg" alt="Warrick White Vase 20" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">WARRICK WHITE VASE 20</h3>
+                <span class="product-price">$68.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit
+                  tortor eu.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <a href="../pages/product.html"
+                  ><img
+                    src="../images/product6.jpg"
+                    alt="Marin White Dinner Plate"
+                /></a>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">MARIN WHITE DINNER PLATE</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="../images/product7.jpg"
+                  alt="Porcelain Dinner Plate"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">TALL CREAM CERAMIC VASE</h3>
+                <span class="product-price">$79.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse belli tetur adipiscing elit.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../images/product8.jpg" alt="Luana Bowl" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">LUANA BOWL</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse belli tetur adipiscing elit
+                  tortor eu.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+            <!-- 3rd tag -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="../images/product10.jpg"
+                  alt="Marin White Dinner Plate"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">MARIN WHITE DINNER PLATE</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="../images/product11.jpg"
+                  alt="Tall Cream Ceramic Vase"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">TALL CREAM CERAMIC VASE</h3>
+                <span class="product-price">$79.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse belli tetur adipiscing elit.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../images/product12.jpg" alt="Luana Bowl" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">LUANA BOWL</h3>
+                <span class="product-price">$49.00</span>
+                <p class="product-description">
+                  Lorem ipsum dolor sit amet conse belli tetur adipiscing elit
+                  tortor eu.
+                </p>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="arrow">&lt;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#" class="arrow">&gt;</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="../images/footer-img.svg" alt="Moon Logo" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
+              mauris sed ma
+            </p>
+            <a href="#" class="footer-btn">
+              GET STARTED <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>ABOUT US</h4>
+              <a href="#">Mission</a>
+              <a href="#">Our team</a>
+              <a href="#">Awards</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Privacy policy</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>SERVICES</h4>
+              <a href="#">Web design</a>
+              <a href="#">Web development</a>
+              <a href="#">Mobile design</a>
+              <a href="#">UI/UX design</a>
+              <a href="#">Branding design</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>PORTFOLIO</h4>
+              <a href="#">Corporate websites</a>
+              <a href="#">E-commerce</a>
+              <a href="#">Mobile apps</a>
+              <a href="#">Landing pages</a>
+              <a href="#">UI/UX projects</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2023 Moon | All Rights Reserved |
+            <a href="#">Terms and Conditions</a> |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../Scripts/shop.js"></script>
+  </body>
+</html>

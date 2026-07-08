@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Moon - Crafting Beautiful Spaces</title>
+    <!-- Link for Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles/Journey.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../images/whitelogo.svg" />
+  </head>
+  <body>
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="blog.html">Discover</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-overlay"></div>
+
+    <header>
+      <div
+        class="header-content d-flex justify-content-between align-items-center"
+      >
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/mainlogo.svg" alt="Moon Logo" />
+          </a>
+        </div>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-icons d-flex align-items-center">
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Search.svg" alt="Search"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Avatar.svg" alt="User"
+          /></a>
+          <a href="#" class="nav-icon-hide"
+            ><img src="../images/Heart.svg" alt="Wishlist"
+          /></a>
+          <a href="cart.html" class="cart-icon"
+            ><img src="../images/Shopping cart.svg" alt="Cart"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="journey-container">
+      <h2 class="journey-title">Your Ceramic's Journey</h2>
+      <p class="journey-subtitle">
+        Follow your unique piece as it makes its way from our hands to yours.
+      </p>
+
+      <div class="tree-wrapper">
+        <svg
+          class="tree-svg"
+          viewBox="0 0 400 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M200 0 C320 150, 80 250, 200 400 C320 550, 80 650, 200 800"
+            stroke="#E5E4E6"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <path
+            class="active-track"
+            d="M200 0 C320 150, 80 250, 200 400"
+            stroke="#3A3845"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <div class="journey-node step-done" style="top: 0%; left: 50%">
+          <div class="node-dot"><i class="fa-solid fa-fire-burner"></i></div>
+          <div class="node-info left-side">
+            <h4>In the Kiln</h4>
+            <p>
+              Your ceramic plate was successfully fired and glazed at our Cairo
+              studio.
+            </p>
+            <span class="timestamp">July 5 - 08:30 AM</span>
+          </div>
+        </div>
+
+        <div class="journey-node step-done" style="top: 25%; left: 63%">
+          <div class="node-dot"><i class="fa-solid fa-square-check"></i></div>
+          <div class="node-info right-side">
+            <h4>Quality Assurance</h4>
+            <p>Inspected by hand for perfection in shape and texture finish.</p>
+            <span class="timestamp">July 5 - 02:15 PM</span>
+          </div>
+        </div>
+
+        <div class="journey-node step-active" style="top: 50%; left: 50%">
+          <div class="node-dot"><i class="fa-solid fa-box-open"></i></div>
+          <div class="node-info left-side">
+            <h4>Packed beautifully</h4>
+            <p>
+              Wrapped carefully in premium, plastic-free protective packaging.
+            </p>
+            <span class="current-badge">Processing</span>
+          </div>
+        </div>
+
+        <div class="journey-node" style="top: 75%; left: 37%">
+          <div class="node-dot"><i class="fa-solid fa-truck-ramp-box"></i></div>
+          <div class="node-info right-side">
+            <h4>On the Road</h4>
+            <p>Handed off to our courier team for safe transit.</p>
+          </div>
+        </div>
+
+        <div class="journey-node" style="top: 100%; left: 50%">
+          <div class="node-dot">
+            <i class="fa-solid fa-house-chimney-user"></i>
+          </div>
+          <div class="node-info left-side">
+            <h4>Arrived Home</h4>
+            <p>Delivered safe and sound to your doorstep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="../images/footer-img.svg" alt="Moon Logo" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
+              mauris sed ma
+            </p>
+            <a href="#" class="footer-btn">
+              GET STARTED <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>ABOUT US</h4>
+              <a href="#">Mission</a>
+              <a href="#">Our team</a>
+              <a href="#">Awards</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Privacy policy</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>SERVICES</h4>
+              <a href="#">Web design</a>
+              <a href="#">Web development</a>
+              <a href="#">Mobile design</a>
+              <a href="#">UI/UX design</a>
+              <a href="#">Branding design</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>PORTFOLIO</h4>
+              <a href="#">Corporate websites</a>
+              <a href="#">E-commerce</a>
+              <a href="#">Mobile apps</a>
+              <a href="#">Landing pages</a>
+              <a href="#">UI/UX projects</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2023 Moon | All Rights Reserved |
+            <a href="#">Terms and Conditions</a> |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../Scripts/checkout.js"></script>
+  </body>
+</html>
