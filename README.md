@@ -36,7 +36,7 @@ A responsive furniture eCommerce website built from a Figma design using HTML, C
 Clone the repository:
 
 ```bash
-git clone https://github.com/ziadmohamedali/1st-Ecommerce-moon.git
+git clone https://github.com/ziadmohamedali/Ecommerce-moon.git
 ```
 
 Open `index.html` in your browser.
