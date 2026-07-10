@@ -222,8 +222,7 @@ header {
    1. LAYOUT STRUCTURAL MARGINS & CORE GLOBAL RULES
 ======================================================== */
 .layout {
-    width: min(1440px, calc(100% - 165px));
-    margin-inline: auto;
+    margin: 0 165px;
 }
 
 .font-sans {
@@ -299,7 +298,7 @@ label.form-label {
    4. DEEP CHARCOAL PAYMENT METHODS CARD BOX
 ======================================================== */
 .payment-dark-card {
-    background-color: #3A3845;
+    background-color: rgba(58, 56, 69, 1);
     border-radius: 0;
 }
 
@@ -332,7 +331,7 @@ label.form-label {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .custom-radio:checked {
-    background-color: #ffffff;
+    background-color: rgba(58, 56, 69, 1);
     border-color: #ffffff;
 }
 
@@ -544,8 +543,7 @@ label.form-label {
   }
 
   .layout {
-        width: min(auto, calc(100% - 20px));
-    margin-inline: auto;
+        margin: 0 20px;
   }
 }
 
