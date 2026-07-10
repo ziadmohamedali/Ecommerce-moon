@@ -250,7 +250,7 @@ header {
     color: #3A3845;
 }
 .custom-input:focus {
-    border-color: #3A3845;
+    border-color: rgba(58, 56, 69, 1);
     box-shadow: none;
 }
 
@@ -304,9 +304,9 @@ label.form-label {
 }
 
 .payment-dark-card h5 {
-    font-family: "Georgia", serif;
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Forms inside the dark box context wrapper */
@@ -318,7 +318,7 @@ label.form-label {
     padding: 10px;
 }
 .dark-field::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(166, 166, 168, 1);
 }
 .dark-field:focus {
     background-color: transparent;
@@ -541,6 +541,11 @@ label.form-label {
   .footer-bottom p {
     font-size: 13px;
     line-height: 1.8;
+  }
+
+  .layout {
+        width: min(auto, calc(100% - 20px));
+    margin-inline: auto;
   }
 }
 
