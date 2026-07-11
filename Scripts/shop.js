@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // The sidebar section
 document.addEventListener("DOMContentLoaded", () => {
     // Target DOM Elements
