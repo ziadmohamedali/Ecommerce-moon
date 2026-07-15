@@ -169,6 +169,13 @@ header {
     pointer-events: auto;
 }
 
+
+@media (max-width: 500px) {
+    .off-screen-menu {
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 991px) {
     header {
         padding: 20px 48px;

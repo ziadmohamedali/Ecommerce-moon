@@ -208,6 +208,13 @@ header {
     }
 }
 
+
+@media (max-width: 500px) {
+    .off-screen-menu {
+        max-width: 80%;
+    }
+}
+
 @media (min-width: 992px) {
     .off-screen-menu, 
     .menu-overlay {
