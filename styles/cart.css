@@ -57,8 +57,7 @@ header {
 }
 
 .desktop-nav a:hover {
-    color: black;
-    font-weight: 600;
+    color: #3A3845;
 }
 
 .desktop-nav a::after {
@@ -458,9 +457,10 @@ header {
 
 
 
-/* =========================
-   footer Section
-========================= */
+/* ==========================================
+   Footer Component Layout Matrix
+========================================== */
+
 .footer {
     background: #3A3845;
     padding-top: 80px;
@@ -582,13 +582,7 @@ header {
     text-decoration: underline;
 }
 
-/* footer responsive */
 @media (max-width: 992px) {
-
-    .layout {
-        margin: 0 20px;
-    }
-
   .footer-top {
     display: flex;
     flex-direction: column;
@@ -649,6 +643,10 @@ header {
     font-size: 13px;
     line-height: 1.8;
   }
+
+  .layout {
+        margin: 0 20px;
+  }
 }
 
 
@@ -669,7 +667,6 @@ header {
         margin: 0 16px;
     }
 
-  
     .cart-info {
         display: none !important;
     }
@@ -682,7 +679,6 @@ header {
         position: relative;
         text-align: left !important;
     }
-
    
     .item-remove {
         width: 100%;
@@ -693,7 +689,6 @@ header {
         font-size: 20px;
     }
 
-   
     .item-img {
         width: 70px;
         flex: 0 0 70px;
@@ -705,7 +700,6 @@ header {
         object-fit: cover;
     }
 
-    
     .item-title {
         flex: 1;
         padding-left: 10px !important;
@@ -717,7 +711,6 @@ header {
         padding-top: 15px;
     }
 
-   
     .item-price {
         width: 100%;
         margin-top: 15px;
@@ -732,7 +725,6 @@ header {
         letter-spacing: 1px;
     }
 
-   
     .item-quantity {
         width: 100%;
         margin-top: 12px;
@@ -753,7 +745,6 @@ header {
         width: 95px;
     }
 
-    
     .item-subtotal {
         width: 100%;
         margin-top: 12px;
@@ -769,7 +760,6 @@ header {
         letter-spacing: 1px;
     }
 
-    
     .coupon-box {
         flex-direction: column;
     }
@@ -791,64 +781,4 @@ header {
     .cart-totals-card {
         margin-top: 20px;
     }
-    .footer-top {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    padding: 0 20px;
-  }
-
-  .footer-brand {
-    width: 100%;
-    padding: 0 20px;
-    border-right: none;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #6b6773;
-  }
-
-  .footer-brand p {
-    margin: 20px 0;
-    max-width: 260px;
-    line-height: 1.6;
-  }
-
-  .footer-links {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 35px 0;
-    padding-left: 0;
-  }
-
-  .footer-column {
-    width: 48%;
-  }
-
-  .footer-column:last-child {
-    width: 100%;
-  }
-
-  .footer-column h4 {
-    margin-bottom: 16px;
-    font-size: 15px;
-  }
-
-  .footer-column a {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-
-  .footer-bottom {
-    margin: 0 20px;
-    padding-top: 20px;
-    border-top: 1px solid #6b6773;
-    text-align: center;
-  }
-
-  .footer-bottom p {
-    font-size: 13px;
-    line-height: 1.8;
-  }
 }
