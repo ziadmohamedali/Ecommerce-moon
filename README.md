@@ -6,16 +6,6 @@ While the project guidelines originally required only HTML, CSS, and Bootstrap, 
 
 ---
 
-## Live Links
-
-* Live Demo Home Page: https://ziadmohamedali.github.io/Ecommerce-moon/
-* Live Demo Journey Page: https://ziadmohamedali.github.io/Ecommerce-moon/pages/Journey.html
-* Code Repository: https://github.com/ziadmohamedali/Ecommerce-moon
-* Design File: https://www.figma.com/design/f6AgHIF16kYuHiKeuLB0s0/Moon-Ceramic---Furniture-Store-ECommerce-Website-Shop--Community-?node-id=0-1
-* Let's Connect: https://www.linkedin.com/in/ziadmali/
-
----
-
 ## Features
 
 * Complete Multi-Page Architecture: Features dedicated pages for Home, Shop, Product Details, Cart, Checkout, About, Journey, Blog, and Contact.
